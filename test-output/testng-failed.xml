@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="Tests.releasetest">
+        <methods>
+          <include name="initializeWebdriver"/>
+          <include name="closeBrowser"/>
+          <include name="EndReport"/>
+          <include name="setExtent"/>
+          <include name="new_release"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- Tests.releasetest -->
+      <class name="Tests.searchtest">
+        <methods>
+          <include name="initializeWebdriver"/>
+          <include name="closeBrowser"/>
+          <include name="EndReport"/>
+          <include name="search"/>
+          <include name="setExtent"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- Tests.searchtest -->
+      <class name="Tests.logintest">
+        <methods>
+          <include name="initializeWebdriver"/>
+          <include name="closeBrowser"/>
+          <include name="EndReport"/>
+          <include name="validLogin"/>
+          <include name="setExtent"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- Tests.logintest -->
+      <class name="Tests.registertest">
+        <methods>
+          <include name="initializeWebdriver"/>
+          <include name="closeBrowser"/>
+          <include name="EndReport"/>
+          <include name="Register"/>
+          <include name="setExtent"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- Tests.registertest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
