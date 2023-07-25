@@ -12,7 +12,7 @@ public class newrelease {
 		PageFactory.initElements(driver,this);
 		this.driver = driver;
 	}
-	@FindBy(how=How.XPATH, using = "//span[@class='hm-icon-label']")
+	@FindBy(how=How.XPATH, using = "//i[@class='hm-icon nav-sprite']")
 	public WebElement clickall ;
 	
 	@FindBy(how=How.XPATH, using = "//ul[@class='hmenu hmenu-visible']//a[@class='hmenu-item'][normalize-space()='New Releases']")

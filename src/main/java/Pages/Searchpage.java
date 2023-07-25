@@ -12,12 +12,12 @@ public class Searchpage {
 		PageFactory.initElements(driver , this);
 		this.driver= driver;
 	}
-	@FindBy(how= How.ID,using = "twotabsearchtextbox")
+	@FindBy(how= How.XPATH,using = "//input[@id='twotabsearchtextbox']")
 	public WebElement searchBarTEXT;
 	
 	
 	
-	@FindBy(how = How.ID,using = "nav-search-submit-button")
+	@FindBy(how = How.XPATH,using = "//input[@id='nav-search-submit-button']")
 	public WebElement submitBTTN;
 	
 	 

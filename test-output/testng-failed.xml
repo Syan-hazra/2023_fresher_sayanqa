@@ -23,16 +23,6 @@
           <include name="openBrowser"/>
         </methods>
       </class> <!-- Tests.searchtest -->
-      <class name="Tests.logintest">
-        <methods>
-          <include name="initializeWebdriver"/>
-          <include name="closeBrowser"/>
-          <include name="EndReport"/>
-          <include name="validLogin"/>
-          <include name="setExtent"/>
-          <include name="openBrowser"/>
-        </methods>
-      </class> <!-- Tests.logintest -->
       <class name="Tests.registertest">
         <methods>
           <include name="initializeWebdriver"/>

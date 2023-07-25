@@ -33,28 +33,28 @@ PageFactory.initElements(driver, this);
 this.driver = driver;
 }
 
-@FindBy(how=How.XPATH,using="//*[@id=\"nav-link-accountList-nav-line-1\"]")
+@FindBy(how=How.XPATH,using="//span[@id='nav-link-accountList-nav-line-1']")
 public WebElement New;
 
 
-@FindBy(how=How.XPATH,using="//*[@id=\"createAccountSubmit\"]")
+@FindBy(how=How.XPATH,using="//a[@id='createAccountSubmit']")
 public WebElement start;
 
 
-@FindBy(how=How.XPATH,using="//*[@id=\"ap_customer_name\"]")
+@FindBy(how=How.XPATH,using="//input[@id='ap_customer_name']")
 public WebElement yourName;
 
 
 
-@FindBy(how=How.XPATH,using="//*[@id=\"ap_phone_number\"]")
+@FindBy(how=How.XPATH,using="//input[@id='ap_phone_number']")
 public WebElement phone;
 
 
 
-@FindBy(how=How.XPATH,using="//*[@id=\"ap_password\"]")
+@FindBy(how=How.XPATH,using="//input[@id='ap_password']")
 public WebElement passcode;
 
-@FindBy(how=How.XPATH,using="//*[@id=\"continue\"]")
+@FindBy(how=How.XPATH,using="//input[@id='continue']")
 public WebElement submit;
 
 
