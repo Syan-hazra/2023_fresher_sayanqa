@@ -28,7 +28,7 @@ pipeline {
 
     post {
         always {
-            echo 'This will run always, regardless of build result.
+            echo 'This will run always, regardless of build result.'
             
         }
         success {
