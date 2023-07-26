@@ -14,21 +14,21 @@ pipeline {
             steps {
                 echo 'This is Build command stage'
                
-                sh 'mvn clean'
+                bat 'mvn clean'
             }
         }
        stage('Test') {
             steps {
                 echo 'This is Test Command Stage'
-                sh 'mvn test'
+                bat 'mvn test'
             }
         }
     }
 
     post {
         always {
-            // Clean up after the build, regardless of the result
-            cleanWs()
+            echo 'This will run always, regardless of build result.
+            
         }
         success {
             // Actions to perform if the build is successful (e.g., notifications)
