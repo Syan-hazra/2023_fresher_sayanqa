@@ -6,7 +6,8 @@ pipeline {
             steps {
                 // This step will checkout your code from the GitHub repository
                 // Replace '<your-github-repo>' with your actual GitHub repository URL
-                checkout([$class: 'GitSCM', branches: [[name: '*/main']], userRemoteConfigs: [[url: 'https://github.com/Syan-hazra/2023_fresher_sayanqa.git/']]])
+                //checkout([$class: 'GitSCM', branches: [[name: '*/main']], userRemoteConfigs: [[url: 'https://github.com/Syan-hazra/2023_fresher_sayanqa.git/']]])
+                git branch : 'main', url : 'https://github.com/Syan-hazra/2023_fresher_sayanqa.git'
             }
         }
 
@@ -14,7 +15,7 @@ pipeline {
             steps {
                 echo 'This is Build command stage'
                
-                bat 'mvn clean'
+                bat 'mvn clean install'
             }
         }
        stage('Test') {
